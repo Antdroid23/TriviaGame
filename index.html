@@ -11,7 +11,276 @@
 </head>
 <body>
 
+        <div class="jumbotron">
+            <h1 class="display-4">Sports Trivia!</h1>
+            <hr class="my-4">
+            <div class="container" id="game">
+                <div id="hiddenTwo>">
+                    <p><h3>Lets Play</h3></p>
+                    <p><h5>Test your knowledge of sports with this multiple choice trivia game. You have 120 seconds to answer all the questions and the game ends automatically when time has elapsed. Good luck!</h5></p>
+                    <a class="btn btn-primary btn-lg" role="button" id="start" onclick="startGame()">Start Game</a>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" id="hidden">
+                        <p><h3>do you know your sports?</h3></p>
+                        <p class="time"> Time Left: <span id="counter"></span></p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <p>Who was the shortest player ever to play in the NBA?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio1" id="wrong1">Earl Boykins
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio1" id="wrong2">Romeo Miller
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio1" id="correct1">Tyrone Bogues
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio1" id="wrong">Anthony “Spud” Webb
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>What male tennis player has won the most Grand Slam titles?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio2" id="correct2">Roger Federer
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio2" id="wrong">serena williams
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio2" id="wrong">Maria Sharapova
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio2" id="wrong">venus williams
+                                </label>
+                            </div>
+                            </br>
+                            </br>
+                            <br/>
+                            <br/>
+                        <p>How many holes are there in a full round of golf?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio3" id="correct3">18
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio3" id="wrong">64
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio3" id="wrong">36
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio3" id="wrong">12
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>Who is the only athlete ever to play in a Super Bowl and a World Series?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio4" id="wrong">Michael Jordan
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio4" id="correct4" >Dion Sanders
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio4" id="wrong">Bo Jackson
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio4" id="wrong">Russel Wilson
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>What NFL Quarterback has been in the most Super Bowls?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio5" id="wrong">Aaron Rodgers
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio5" id="wrong">Peyton Manning
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio5" id="wrong">Joe Montana
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio5" id="correct5">Tom Brady
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>What Football position shares its name with a way to score 2 points?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio6" id="wrong">Touch Receiver
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio6" id="wrong">Running Score
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio6" id="correct6">Safety
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio6" id="wrong">Line Backer
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>What is the nickname for Purdue's sports teams?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio7" id="correct7">The Boilermakers
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio7" id="wrong">Cheese Heads
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio7" id="wrong">producers
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio7" id="wrong">Scammers
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>The Heisman Trophy is presented in which sport?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio8" id="wrong">NFL
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio8" id="wrong">NBA
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio8" id="correct8">College Football
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio8" id="wrong">College Basketball
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>In American Football which famous Miami Dolphins quarterback retired in 2000?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio9" id="wrong">drew bledsoe
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio9" id="wrong">Brett Farve
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio9" id="wrong">John Elway
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio9" id="correct9">Dan Marino
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        <p>In American football, how many points is a touchdown worth?</p>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio0" id="correct0">6
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio0" id="wrong">7
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio0" id="wrong">3
+                                </label>
+                            </div>
+                            <div class="form-check-inline disabled">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio0" id="wrong">10
+                                </label>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
 
+                            <a class="btn btn-primary btn-lg" href="#" role="button" onclick="questions()">Submit</a>
+
+                            <div id ="resultsWrapper" class="hide">
+                                <h2>All done!</h2>
+                                <p>Correct Answers: <span id ="correctAnswers"></span></p>
+                                <p>Incorrect Answers: <span id ="incorrectAnswers"></span></p>
+                                <p>Unanswered: <span id ="unanswered"></span></p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="assets/javascript/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
